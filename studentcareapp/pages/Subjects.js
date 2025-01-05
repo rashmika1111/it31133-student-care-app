@@ -2,9 +2,10 @@ import { View, Text, ScrollView } from "react-native";
 import React from "react";
 import { StyleSheet } from "react-native";
 import { courses, marks, subjects } from "../assets/dataset/studentdb";
-import Banner from "../Components/Banner";
-import Footer from "../Components/Footer";
+
 import { Divider } from "react-native-paper";
+import Banner from "../components/Banner";
+import Footer from "../components/Footer";
 
 export default function Subjects({ user2 }) {
   const course = courses.find((course) => course.id === user2.course_id);

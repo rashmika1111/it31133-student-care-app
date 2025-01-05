@@ -1,15 +1,15 @@
 import { View, Text, StyleSheet, Image, ScrollView } from "react-native";
 import React from "react";
 import { Divider } from "react-native-paper";
-import Banner from "../Components/Banner";
-import Footer from "../Components/Footer";
+import Banner from "../components/Banner";
+import Footer from "../components/Footer";
 
 export default function Profile({ user }) {
   return (
     <>
       <ScrollView>
         <View>
-          <Banner />
+          <Banner/>
         </View>
         <View style={styles.container1}>
           <View style={styles.profile}>

@@ -1,9 +1,11 @@
 import { View, Text, ScrollView, StyleSheet } from "react-native";
 import React from "react";
 import { courses } from "../assets/dataset/studentdb";
-import Banner from "../Components/Banner";
+
 import { Divider } from "react-native-paper";
-import Footer from "../Components/Footer";
+
+import Banner from "../components/Banner";
+import Footer from "../components/Footer";
 
 export default function Course({ user1 }) {
   const course = courses.find((course) => course.id === user1.course_id);
@@ -28,7 +30,7 @@ export default function Course({ user1 }) {
         </View>
       </View>
       <View style={styles.footers}>
-        <Footer />
+        <Footer/>
       </View>
     </ScrollView>
   );
