@@ -3,9 +3,11 @@ import React from "react";
 import { courses } from "../assets/dataset/studentdb";
 
 import { Divider } from "react-native-paper";
-
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
+
+
+
 
 export default function Course({ user1 }) {
   const course = courses.find((course) => course.id === user1.course_id);
@@ -13,7 +15,7 @@ export default function Course({ user1 }) {
   return (
     <ScrollView>
       <View>
-        <Banner />
+        <Banner/>
       </View>
       <View style={styles.container1}>
         <Text style={styles.heading}>{course.name}</Text>

@@ -7,6 +7,8 @@ import { Divider } from "react-native-paper";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 
+
+
 export default function Subjects({ user2 }) {
   const course = courses.find((course) => course.id === user2.course_id);
 
@@ -24,7 +26,7 @@ export default function Subjects({ user2 }) {
   return (
     <ScrollView>
       <View>
-        <Banner />
+        <Banner/>
       </View>
       <View style={styles.container1}>
         <Text style={styles.heading}>{course.name}</Text>
